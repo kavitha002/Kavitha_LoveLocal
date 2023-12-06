@@ -11,11 +11,11 @@ Output: [3]
 #code:
 from collections import Counter
 
-def majorityElement(arr):
-    # Size of the given array
+def MajorityElement(arr):
+    # Size of the array given
     n = len(arr)
 
-    # Count the occurrences of each element using Counter
+    # Counting the occurrences of each element using Counter
     counter = Counter(arr)
 
     # Searching for the majority element
@@ -26,7 +26,7 @@ def majorityElement(arr):
     return -1
 
 arr = [3,2,3]
-ans = majorityElement(arr)
+ans = MajorityElement(arr)
 print("The majority element is:", ans)
 
 '''
@@ -74,8 +74,7 @@ def majorityElement(v: List[int]) -> List[int]:
 
     ls = [] # list of answers
 
-    # Manually checking if the stored elements in
-    # el1 and el2 are the majority elements:
+    # Manually checking if the stored elements in el1 and el2 are majority or not
     cnt1, cnt2 = 0, 0
     for i in range(n):
         if v[i] == el1:
