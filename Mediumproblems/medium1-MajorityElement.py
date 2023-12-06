@@ -14,7 +14,7 @@ while iterating through the array
 1)If cnt1 is 0 and the current element is not el2, it updates el1 and increments cnt1.
 2)If cnt2 is 0 and the current element is not el1, it updates el2 and increments cnt2.
 3)If the current element matches el1 or el2, the respective count is increased or else both are decremented.
- At the end the algorithm manually checks the counts of el1 and el2 and any element with a count greater than the floor(N/3), if yes then it is the majority element.
+ At the end the algorithm it manually checks the counts of el1 and el2 and any element with a count greater than the floor(N/3), if yes then it is the majority element.
 
 '''
 #code:
