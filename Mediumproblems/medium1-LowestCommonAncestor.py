@@ -10,6 +10,25 @@ Output: 6
 Explanation: The LCA of nodes 2 and 8 is 6. 
 
 '''
+
+'''
+METHOD:
+If root is null or if root is x or if root is y then return root
+Made a recursion call for both
+i) Left subtree 
+
+ii)Right subtree
+
+Because we would find LCA in the left or right subtree only.
+
+If the left subtree recursive call gives a null value that means we haven’t found LCA in the left subtree, which means we found LCA on the right subtree. So we will return right.
+If the right subtree recursive call gives null value, that means we haven’t found LCA on the right subtree, which means we found LCA on the left subtree. So we will return left .
+ If both left & right calls give values (not null)  that means the root is the LCA.
+ 
+'''
+
+#code ->
+
 class Treenodeelement:
     def __init__(self, x):
         self.val = x
@@ -58,7 +77,7 @@ if ancestor is not None:
 else:
     print("No common ancestor found.")
     
-    '''
+'''
  TRACING: 
  build_tree (index=0):
 
